@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
 direction BT
 class AgressifBehaviour {
@@ -19,6 +20,7 @@ class Main {
 class NormalBehaviour {
   + NormalBehaviour() 
   + moveCommand() int
+```
 }
 class Robot {
   + Robot(String) 
