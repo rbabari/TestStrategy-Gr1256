@@ -20,7 +20,6 @@ class Main {
 class NormalBehaviour {
   + NormalBehaviour() 
   + moveCommand() int
-```
 }
 class Robot {
   + Robot(String) 
@@ -36,3 +35,4 @@ class Robot {
 AgressifBehaviour  ..>  IBehaviour 
 DefensifBehaviour  ..>  IBehaviour 
 NormalBehaviour  ..>  IBehaviour 
+```
