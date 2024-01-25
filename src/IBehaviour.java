@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface IBehaviour {
+public interface IBehaviour {
+    public int moveCommand();
 }

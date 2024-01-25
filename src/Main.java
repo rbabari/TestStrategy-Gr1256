@@ -2,16 +2,56 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Entrée with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Maj+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Robot r1 = new Robot("robot1");
+        r1.setBehaviour(new AgressifBehaviour());
+        r1.move();
 
-            // Press Maj+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        r1.setBehaviour(new NormalBehaviour());
+        r1.move();
+
+        r1.setBehaviour(new DefensifBehaviour());
+        r1.move();
+
+
+
+
+
+
+
+
+
+
+
+   // un objet robot
+        // changer sont comportement tout en gardant l'instance du robot
+
+        // robot Abstrait
+
+            // robot Agressif
+            // robot Normal
+            // robot Defensif
+            //-----------------------
+            //
+        // 1- probleme : changer le comportement en dynamique
+        // r1 = new robotAgressif()
+        // r1 = new robotNormal
+
+        // Ajouter un quatrieme comportent : robot Soutien
+
+            // 2- nouvelle classe (RobotSoutien extends Robot) fortement couplé
+
+
+        //*********** Avantage ::: Design pattern strategy
+
+        //- couplage faible : RobotSoutien implements Istrategy
+        // Istrategy setrategy ::  robot.setStrategy(new RobotSoutien())
+        // Istrategy setrategy ::  robot.setStrategy(new RobotNormal())
+
+
+        // SOLID : Open (a l'extention)  / Close (a la  modification) principle
+
+
+
     }
 }
